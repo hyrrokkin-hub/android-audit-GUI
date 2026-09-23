@@ -1,0 +1,29 @@
+CARA MENYIAPKAN ADB SEBELUM BUILD
+==================================
+
+Folder ini harus berisi 3 file berikut sebelum menjalankan build.bat,
+supaya adb ikut ter-bundle di dalam AndroidAuditTool.exe (user akhir
+tidak perlu install apa pun lagi):
+
+    adb.exe
+    AdbWinApi.dll
+    AdbWinUsbApi.dll
+
+Cara dapatkan (resmi dari Google, gratis):
+
+1. Buka: https://developer.android.com/tools/releases/platform-tools
+2. Download "SDK Platform-Tools for Windows"
+3. Extract file zip-nya
+4. Copy 3 file di atas dari folder hasil extract ke folder ini
+   (vendor/platform-tools/) - sejajar dengan file README ini
+5. Jalankan build.bat dari folder root project
+
+Kenapa tidak saya sertakan langsung di sini?
+Ini binary resmi milik Google (bagian dari Android SDK), jadi lebih
+aman & sesuai ketentuan kalau kamu download langsung dari sumber
+resminya, bukan dari pihak ketiga manapun (termasuk saya).
+
+Catatan: file-file ini TIDAK di-commit ke git (lihat .gitignore) -
+supaya repo tetap ringan dan tidak menyimpan binary pihak ketiga.
+Kalau kamu clone project ini di komputer baru, ulangi langkah di atas
+sebelum build.
