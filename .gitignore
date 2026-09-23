@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec.bak
+
+# Binary resmi Google, jangan ikut di-commit - lihat vendor/platform-tools/BACA_DULU.txt
+vendor/platform-tools/adb.exe
+vendor/platform-tools/AdbWinApi.dll
+vendor/platform-tools/AdbWinUsbApi.dll

@@ -1,0 +1,6 @@
+customtkinter>=5.2.0
+pyinstaller>=6.0.0
+
+# Opsional: kalau tidak diinstall, tombol export PDF akan menampilkan
+# pesan "tidak tersedia" - export TXT & JSON tetap jalan normal.
+fpdf2>=2.7.0
